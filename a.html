@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebDocs</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <style>
+    * {
+      list-style: none ;
+      text-decoration: none;
+      box-sizing: border-box;
+       /* font-family: 'Open Sans',sans-serif;  */
+      scroll-behavior: smooth;
+    }
+
+    .sidebar {
+      background: rgb(79, 133, 164);
+      position: fixed;
+      width: 200px;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .wrapper {
+      margin-left: 200px;
+    }
+
+    .side1 {
+      margin: 8px;
+    }
+
+    .fstdiv {
+      margin: 10px;
+      padding: 15px;
+
+      background-color: rgb(243, 238, 238);
+      border-radius: 8px;
+    }
+
+
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .cod {
+      background-color: aliceblue;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+    table,tr,th,td{
+            text-align:center;
+            border: 1px solid;
+            border-style: dashed solid;
+        }
+    #Inline li{
+       list-style: disc;
+     }
+     .side1 a:hover{
+      color:white;
+     }
+
+     pre{
+      display: inline;
+     }
+     #DIV h2{
+        text-align: initial;
+     }
+     
+     
+
+   
+  </style>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="side1">
+      <h2>HTML Tutorial</h2>
+      <hr>
+      <ul>
+        <li><a href="#Intro">Introduction</a>
+        </li>
+        <li><a href="#Element">HTML Element</a></li>
+        <li><a href="#Element">HTML Tags</a></li>
+        <li> <a href="#Attri">HTML Attributes </a> </li>
+        <li><a href="#Format">HTML Formatting</a></li>
+        <li><a href="#Quotation">HTML Quotation</a></li>
+        <li><a href="#Comments">HTML Comments</a></li>
+        <li><a href="#Favicon">HTML Favicon</a></li>
+        <li><a href="#Images">HTML Images</a></li>
+        <li><a href="#List">HTML Lists</a></li>
+        <li><a href="#Block">HTML Block Elements</a></li>
+        <li><a href="#Inline">HTML Inline Elements</a></li>
+        <li><a href="#DIV">HTML Div Element</a></li>
+        <li><a href="#SPANN">HTML Span Element</a></li>
+        
+      </ul>
+
+
+
+    </div>
+
+  </div>
+
+
+  <div class="wrapper">
+
+        
+      <div class="fstdiv" id="Intro">
+
+        <h3>What is HTML ?</h3>
+        <ul>
+          <li>HTML stands for <strong>Hyper Text Markup Language</strong></li>
+          <li>It is a basic building block of website</li>
+          <li>It describes the structure of a Web page</li>
+          <li>It is skeleton of WebPage</li>
+          <li>It is not case sensitive</li>
+          <li>HTML elements tell the browser how to display the content</li>
+        </ul>
+
+        <h3>Explained</h3>
+        <ul>
+          <li>
+            <code class="cod"> !DOCTYPE </code>: defines that this document is an
+            HTML5 document
+          </li>
+          <li>
+            <code class="cod">html </code>: It is the root element of an HTML page
+          </li>
+
+          <li>
+            <code class="cod">head </code>: It contains meta information about the
+            HTML page
+          </li>
+
+          <li>
+            <code class="cod">title </code>: It specifies a title for the HTML
+            page
+          </li>
+
+          <li>
+            <code class="cod">body </code>: It element defines the document's
+            body, and is a container for all the visible contents, such as
+            headings, paragraphs, images, hyperlinks, tables, lists, etc.
+          </li>
+
+          <li><code class="cod">h1 </code>: It defines a large heading</li>
+          <li><code class="cod">h6 </code>: Itdefines a large heading</li>
+          <li><code class="cod">p </code>: element defines a paragraph</p>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="fstdiv" id="Element">
+        <h3>What is an HTML Element?</h3>
+        <p>
+          An HTML element is defined by a start tag, some content, and an end tag:
+          <br>
+          <br>
+          <b class="cod">tagname</b> Hello World.(Content) <b class="cod">/tagname</b>
+          <br>
+          <br>
+          The HTML element is everything from the start tag to the end tag:
+
+        </p>
+
+        <h3>
+          Tags in HTML
+        </h3>
+        <ul>
+          <li>HTML tags are keywords which defines that how browser will format and display the content</li>
+          <li>Tags are enclosed within <> brackets</li>
+          <li>There are some tags which do not have any closing tag like br,hr ect.</li>
+          <li>A self closing tag in HTML does not need to be closed manually</li>
+        </ul>
+      </div>
+
+
+      <div class="fstdiv" id="Attri">
+        <h3>HTML Attributes</h3>
+        <ul>
+          <li>All HTML elements can have attributes</li>
+          <li>Attributes provide additional information about elements
+          </li>
+          <li>Attributes are always specified in the start tag</li>
+          <li>Attributes usually come in name/value pairs like: name="value"
+          </li>
+        </ul>
+        <h4>Some Attributes</h4>
+        <ul>
+          <li> <strong>href : </strong>The <a> tag defines a hyperlink. The href attribute specifies the URL of the page
+              the
+              link goes to </li>
+          <li> <strong>src : </strong>The <img> tag is used to embed an image in an HTML page. The src attribute
+            specifies
+            the
+            path to the image to be displayed:</li>
+          <li><strong>width and height : </strong>specify the width and height of the content (in pixels)</li>
+          <li><strong>alt :</strong>The required alt attribute for the <img> tag specifies an alternate text for an
+            image
+          </li>
+          <li><strong>title : </strong> defines extra info about an element </li>
+          <li><strong>style : </strong>The style attribute is used to add styles to an element, such as color, font,
+            size,
+            and more.</li>
+        </ul>
+      </div>
+
+      <div class="fstdiv" id="Format">
+        <h3>HTML Text Formatting</h3>
+        HTML contains several elements for defining text with a special meaning.
+
+        <h4>HTML Formatting Elements</h4>
+        <ul>
+          <li><strong>b :</strong> bold text => <b> bold text</b></li>
+          <li><strong>strong :</strong>Important text => <strong>strong text</strong></li>
+          <li><strong>i :</strong>Italic text => <i>Italic text</i></li>
+          <li><strong>em :</strong>Emphasized text => <em>Emphasized text</em></li>
+          <li><strong>mark :</strong>Marked text => <mark>marked text</mark> </li>
+          <li><strong>small :</strong>Smaller text => <small>small text</small></li>
+          <li><strong>del :</strong>Deleted text => <del>deleted text</del></li>
+          <li><strong>ins :</strong>Inserted text => <ins>Inserted text</ins>
+          </li>
+          <li><strong>sub :</strong>Subscript text => Sub<sub>script</sub> text</li>
+          <li><strong>sup :</strong>Superscript text => Super<sup>script</sup> text</li>
+        </ul>
+      </div>
+
+      <div class="fstdiv" id="Quotation">
+        <h3>HTML Quotation</h3>
+        <ul>
+          <li>
+            The HTML <code class="cod">blockquote</code> element defines a section that is quoted from another
+            source. Browsers usually indent blockquote elements.
+          </li>
+          <li><strong>q :</strong>tag defines a short quotation.</li>
+          <li><strong>abbr : </strong> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.",
+            "ASAP"
+            "ATM".
+            <br>
+            Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+          </li>
+          <li><strong>address :</strong>tag defines the contact information for the author/owner of a document or an
+            article.
+            <br>
+            The contact information can be an email address, URL, physical address, phone number, social media handle,
+            etc.
+
+            The text in the address <address> element usually renders in italic, and browsers will always add a line
+              break
+              before
+              and after the <address> element.
+          </li>
+          <li><strong>cite :</strong>tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a
+            painting, a sculpture, etc.)</li>
+        </ul>
+      </div>
+
+      <div class="fstdiv" id="Comments">
+        <h3>HTML Comments</h3>
+        HTML comments are not displayed in the browser, but they can help document your HTML source code.
+        <pre> <
+!--this  is a comment-->
+    </pre>
+
+      </div>
+
+      <div class="fstdiv" id="Favicon">
+        <h3> HTML Favicon </h3>
+        A favicon is a small image displayed next to the page title in the browser tab
+        <br>
+        <br>
+        In order to display favicon , we need to add <strong>link</strong> element to your index.html file after the
+        title
+        element
+        <br>
+        <strong>link :</strong> defines the relationship between a document and an external resource
+        <br>
+        <br>
+        <strong>Example :</strong> link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+      </div>
+
+      <div class="fstdiv" id="Images">
+        <h3>HTML Images</h3>
+        Images can improve the design and the appearance of a web page
+        <br><br>
+        The HTML <strong>img</strong> tag is used to embed an image in a web page.
+        The <b>img</b> tag has two required attributes:
+        <ul>
+          <li>src - Specifies the path to the image
+          </li>
+          <li>
+            alt - Specifies an alternate text for the image
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="fstdiv" id="List">
+        <h3>
+          HTML Lists
+        </h3>
+        HTML lists allow web developers to group a set of related items in lists.
+        <br>
+        <h4>Types of lists</h4>
+        <ul>
+          <li>Ordered List</li>
+          <li>Unordered list</li>
+          <li>Description list</li>
+        </ul>
+
+        <h4>Ordered List</h4>
+        An ordered list starts with the <b>ol</b> tag. Each list item starts with the <b>li</b> tag.
+
+        The list items will be marked with numbers by default:
+        <br>
+
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+
+        <h4>Unordered List</h4>
+        An unordered list starts with the <strong>ul</strong> tag. Each list item starts with the <strong>li</strong>
+        tag.
+
+        The list items will be marked with bullets (small black circles) by default:
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <h4>Description List</h4>
+        A description list is a list of terms, with a description of each term.
+
+        The <b>dl</b> tag defines the description list, the <b>dt</b> tag defines the term (name), and the <b>dd</b> tag
+        describes each term:
+        <dl>
+          <dt>Coffee</dt>
+          <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>- white cold drink</dd>
+        </dl>
+      </div>
+
+      <div class="fstdiv" id="Block">
+        <strong>HTML Block Elements</strong><br>
+        <p>
+            A block-level element always starts on a new line, and the browsers
+            automatically adds space(margin) before and after each block element.
+        </p>
+
+        <p>
+            Ex- Some block level Elements -:
+            <table>
+                <tr>
+                    <td><h3><a href=""><code>&lt;address&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;article&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;aside&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;blockquote&gt;</code></a></h3></td>
+                </tr>
+                <tr>
+                    <td><h3> <a href=""><code>&lt;dl&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;dt&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;fieldset&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;figure&gt;</code></a></h3></td>
+                </tr>
+                <tr>
+                    <td><h3><a href=""><code>&lt;footer&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;footer&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;h1&gt;-&lt;h6&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;table&gt;</code></a></h3></td>
+                </tr>   
+            </table>
+        </p>
+      </div>
+
+      <div class="fstdiv" id="Inline">
+         <strong>HTML Inline Elements</strong>
+         <ul>
+            <li>An inline element does not start on a new line.</li>
+            <li>An inline element takes us as much width as necessary.</li>
+         </ul>
+
+         <p>
+            Ex- Some Inline elements are -:
+
+            <table>
+                <tr>
+                    <td><h3><a href=""><code>&lt;a&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;abbr&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;b&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;bdo&gt;</code></a></h3></td>
+                </tr>
+                <tr>
+                    <td><h3> <a href=""><code>&lt;big&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;br&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;input&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;cite&gt;</code></a></h3></td>
+                </tr>
+                <tr>
+                    <td><h3><a href=""><code>&lt;code&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;em&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;i&gt;</code></a></h3></td>
+                    <td><h3><a href=""><code>&lt;img&gt;</code></a></h3></td>
+                </tr>   
+            </table>
+         </p>
+      </div>
+
+      <div class="fstdiv" id="DIV">
+          <strong>HTML Div Element</strong>
+          <ul>
+            <li>
+              The <pre>&lt;div&gt;</pre> element id often used as a container 
+              for other HTML elements.
+            </li>
+            <li>
+              The <pre>&lt;div&gt;</pre> element has no required attributes ,but 
+              <b>style,class and id</b> are common.
+            </li>
+          </ul>
+
+          <p>
+            Ex - <pre> &lt;div style="background-color:pink; width:300px"&gt;</pre><br>
+               <pre>&lt;h2&gt;</pre> London <pre>&lt;/h2&gt;</pre><br>
+               <pre>&lt;p&gt;</pre> London is a city. <pre>&lt;/p&gt;</pre><br>
+               <pre>&lt;/div&gt;</pre><br><br>
+
+             Output -: 
+             <div style="background-color:pink; width:300px">
+              <h2>London</h2>
+              <p>London is a city.</p>
+             </div>  
+   
+          </p>
+      </div>
+
+      <div class="fstdiv" id="SPANN">
+        <strong>HTML Span Element</strong>
+        <p>The <code>&lt;span&gt;</code> element is an inline container
+        used to mark up a part of text , or a part of document.</p>
+
+        <p>The <code>&lt;span&gt;</code> Element has no required attributes,
+        but <b>style, class and id</b> are common.</p>
+
+        <p>
+          Ex -:
+          <code>&lt;p&gt;</code> I am <code>&lt;span style="color:green;"&gt;</code>
+          green <code>&lt;/span&gt;</code><code>&lt;/p&gt;</code>
+        </p>
+
+        <p>
+          Output -: I am <span style="color:green;">green</span>  
+        </p>
+      </div>
+
+      
+
+
+    </div>
+  </div>
+</body>
+
+</html>
